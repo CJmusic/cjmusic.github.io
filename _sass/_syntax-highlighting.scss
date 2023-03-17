@@ -2,20 +2,20 @@
  * Syntax highlighting styles
  */
 .highlight {
-    background: #fff;
+    background: #282828;
     @extend %vertical-rhythm;
 
     .highlighter-rouge & {
-      background: #eef;
+      background: #7c6f64;
     }
 
-    .c     { color: #998; font-style: italic } // Comment
-    .err   { color: #a61717; background-color: #e3d2d2 } // Error
+    .c     { color: #fb4934; font-style: italic } // Comment
+    .err   { color: #b8bb26; background-color: #3c3836 } // Error
     .k     { font-weight: bold } // Keyword
     .o     { font-weight: bold } // Operator
-    .cm    { color: #998; font-style: italic } // Comment.Multiline
+    .cm    { color: #fb4934; font-style: italic } // Comment.Multiline
     .cp    { color: #999; font-weight: bold } // Comment.Preproc
-    .c1    { color: #998; font-style: italic } // Comment.Single
+    .c1    { color: #fb4934; font-style: italic } // Comment.Single
     .cs    { color: #999; font-weight: bold; font-style: italic } // Comment.Special
     .gd    { color: #000; background-color: #fdd } // Generic.Deleted
     .gd .x { color: #000; background-color: #faa } // Generic.Deleted.Specific
@@ -68,4 +68,6 @@
     .vg    { color: #008080 } // Name.Variable.Global
     .vi    { color: #008080 } // Name.Variable.Instance
     .il    { color: #099 } // Literal.Number.Integer.Long
+
+	
 }
