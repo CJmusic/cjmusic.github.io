@@ -23,15 +23,9 @@ It doesn't really matter the order you create things in, if you create the Repl 
 
 I'm going to start by creating a Blank Repl. On Replit.com go ahead and click create a Repl.
 
-If you wish to host your site on GitHub Pages, you'll need to name the repo: 
+If you wish to host your site on GitHub Pages, you'll need to name the repo `<your_username>.github.io`. This gives you the hosting domain of `<your_username>.github.io` Meaning that's the URL that people will go to to visit your website. You can of course purchase a different domain... but that's beyond the focus of this tutorial. Note, any and all Repl's get a `<repl_name>.<user_name>.repl.co` domain free as well.
 
-	<your_username>.github.io
-
-
-This gives you the hosting domain of `<your_username>.github.io` Meaning that's the URL that people will go to to visit your website. You can of course purchase a different domain... but that's beyond the focus of this tutorial. Note, any and all Repl's get a `<repl_name>.<user_name>.repl.co` domain free as well.
-
-
-I suggest you adopt a workflow where your `<your_username>.github.io` is your main published site, and your `<repl_name>.<user_name>.repl.co` where you branch out and do your development and testing. Your changes to repl.co are instant, and it easy to see them in the Webview in the Replit IDE. 
+I suggest you adopt a workflow where your `<your_username>.github.io` is your main published site, and your `<repl_name>.<user_name>.repl.co` where you branch out and do your development and testing. Your changes to repl.co are instant, and it is easy to see them in the Webview in the Replit IDE. 
 
 ![](/post-assets/2023-03-17-First%20Commit/CreateARepl.png)
 
@@ -40,6 +34,8 @@ If you created the Repo first on GitHub click the import from GitHub button,
 Once you create your Repl and GitHub Repo, open your Repl in Replit and you should be greeted with a screen similar to: 
 
 ![](/post-assets/2023-03-17-First%20Commit/BlankRepl.png)
+
+A Repl, comes from the term Read-Eval-Print Loop. 
 
 
 
