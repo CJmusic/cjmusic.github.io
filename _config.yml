@@ -9,7 +9,7 @@
 title: Chris Joseph
 email: chrisjosephsongs@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  My personal website. 
+  I am a musician and audio scientist. I studied astronomy, physics and vinyl records in school and now work as a software developer in the field of audio. This is my personal website and blog, I mainly talk about music, science, my latest software projects and audio. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://cjmusic.github.io/" # the base hostname & protocol for your site
 twitter_username: chrisjoseph95

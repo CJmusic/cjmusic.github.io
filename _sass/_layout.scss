@@ -17,10 +17,11 @@
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
+	color: $grey-color-light;
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: $grey-color-light;
     }
 }
 
@@ -115,7 +116,7 @@
 
 .footer-col-wrapper {
     font-size: 15px;
-    color: $grey-color;
+    color: $grey-color-light;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
 }
@@ -186,7 +187,7 @@
 
 .post-meta {
     font-size: $small-font-size;
-    color: $grey-color;
+    color: $meta-color;
 }
 
 .post-link {
