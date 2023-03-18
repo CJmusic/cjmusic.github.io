@@ -4,6 +4,6 @@ _site
 .jekyll-cache
 _site
 Gemfile
-Gemfil.lock
+Gemfile.lock
 .replit
 replit.nix
