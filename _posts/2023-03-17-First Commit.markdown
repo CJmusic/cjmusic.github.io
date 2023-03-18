@@ -17,16 +17,16 @@ I will preface this by saying I have premium accounts in both. Mainly because th
 
 This tutorial assumes you have both a GitHub and Replit account. If you're starting from nothing, I recommend making GitHub first. Then you can Sign Up to Replit using that account-- which will automatically link the two. I'm also going to assume you know, are familiar with or at least aren't afraid of basic coding workflows and principles. 
 
-#### Step One: Creating a Replit Repl and Matching GitHub Repo
+### Step One: Creating a Replit Repl and Matching GitHub Repo
 
-It doesn't really matter the order you things in, if you create the Repl first Replit gives you the option to create a matching Repo on GitHub to store your files and code, and ultimately host your GitHub Pages site. If you create the repo first on GitHub, it's dead simple to link an existing Repl to a GitHub Repository. 
-
-
-
-#### Step Two: Configuring your environment in Repl, installing Jenkins
+It doesn't really matter the order you create things in, if you create the Repl first Replit gives you the option to create a matching Repo on GitHub to store your files and code, and ultimately host your GitHub Pages site. If you create the repo first on GitHub, it's dead simple to link an existing Repl to a GitHub Repository. 
 
 
 
-#### Step Three: 
+### Step Two: Configuring your environment in Repl, installing Jenkins
+
+
+
+### Step Three: 
 
 
