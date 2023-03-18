@@ -9,9 +9,7 @@ I've created a website. For what purpose you might ask?
 
 I'm still figuring that out, for now I thought I'd document the process in a post so at least I have something some content to develop around. 
 
-I've recently been developing in [Replit](replit.com), a browser based IDE. You heard me right, a browser based IDE.
-
-That is to say, I developed this website completely in a browser tab, I didn't install anything on my computer and I'm not paying for any hosting. Everything is being hosted by [GitHub Pages](https://pages.github.com) and developed in Replit. 
+I've recently been developing in [Replit](replit.com), a browser based IDE. You heard me right, I developed this website completely in a browser tab, I didn't install anything on my computer and I'm not paying for any hosting. Everything is being hosted by [GitHub Pages](https://pages.github.com) and developed in Replit. 
 
 I will preface this by saying I have premium accounts in both. Mainly because then I can have private Repos and Repls. Unfortunately one downside for using these free services, as far as I can tell all code, content, commits etc. for your website must be hosted in a public [GitHub](https://github.com) repo. I don't believe this matters much for my purposes, and I imagine the purposes of many people wishing to build websites. But it's something to keep in mind. 
 

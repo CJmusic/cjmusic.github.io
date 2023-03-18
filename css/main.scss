@@ -19,10 +19,11 @@ $background-color: #000000;
 $brand-color:      #2a7ae2;
 
 $grey-color:       #2b2b2b;
-$grey-color-light: lighten($grey-color, 40%);
+$grey-color-light: lighten($grey-color, 80%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-$white: #ffffff
+$white: #ffffff;
+$meta-color: #ffffff;
 
 
 // Width of the content area
