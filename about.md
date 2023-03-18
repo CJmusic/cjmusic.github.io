@@ -4,6 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Hello, my name is Chris. I am a musician, audio scientist and part-time website builder and blogger. I studied the physics of vinyl records for my masters research and now work as a software developer in the field of audio. I write various blog posts about music, technology, science, my latest software project, spirituality and disc golf. 
 
-I have various projects I'm currently working on which are hosted on my [GitHub](https://github.com/CJmusic). 
+I am a musician, audio scientist and coder. I studied astronomy, physics and vinyl records in school and now work as a software developer in the field of audio. This is my personal website and blog, I mainly talk about music, science, my latest software projects and audio.
+
+I have various projects I'm currently working on which are hosted on my [Github](https://github.com/CJmusic). 
+
+![](/assets/profile-pic.JPG)

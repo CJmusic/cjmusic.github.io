@@ -130,4 +130,4 @@ And you're finished! Edit the Jekyll template and files and watch your changes a
 
 When you're ready to publish to your `<username>.github.io` domain, then simply push your code to your main branch in the matching Github repo for your replit. 
 
-And that's how you create a Website! 
+And that's how you create a website in a browser tab for free! 
