@@ -1,22 +1,24 @@
-/* Styles */
+/* Light mode (default) styles */
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Keep this as it might be the desired font */
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
-  color: #000000; /* Updated text color */
-  background-color: #ffffff; /* Light background color */
+  color: #000;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 header {
-  background-color: #f8f8f8;
-  padding: 1em;
-  border-bottom: 2px solid #ddd;
+    text-align: center;
 }
 
-nav {
+header, nav, .site-footer, footer, .post-box {
   background-color: #f8f8f8;
-  padding: 1em;
   border-bottom: 2px solid #ddd;
 }
 
@@ -25,83 +27,93 @@ nav ul {
   padding: 0;
   display: flex;
   justify-content: center;
-  gap: 2em; /* Adjust as needed */
+  gap: 2em;
 }
 
-nav ul li {
+nav ul li, li {
   display: inline;
-}
-
-nav ul li a {
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.site-footer {
-  background-color: #fff; /* Adjust background color */
-  padding: 20px;
-  text-align: left; /* Align text to the left */
-  border-top: 2px solid #ddd;
-  color: #000;
-  font-family: Arial, sans-serif;
-}
-
-.footer-heading {
-  font-size: 24px;
-  margin-bottom: 5px; /* Provide space below the title */
-}
-
-.footer-description {
-  font-size: 16px;
-  margin-bottom: 10px; /* Provide space below the description */
-}
-
-.footer-col-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; /* Flex layout to balance columns */
-  margin-top: 15px; /* Space above the column wrapper */
-}
-
-.contact-list, .social-media-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
   margin-bottom: 5px;
 }
 
-a {
-  color: #5badf5;
+nav ul li a, .post-link, a {
+  color: #000;
   text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
+.site-footer {
+  padding: 20px;
+  text-align: left;
+  border-top: 2px solid #ddd;
+  color: #000;
+}
+
+.footer-heading {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.footer-description, .post-meta {
+  font-size: 16px
+  margin-bottom: 10px;
+}
+
+.footer-col-wrapper, .contact-list, .social-media-list, .post-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 .icon {
-  width: 24px; /* Adjust width for image-based icons */
-  height: 24px; /* Adjust height for image-based icons */
-  display: inline-block; /* Ensure proper display */
-  line-height: 0; /* Remove any added line-height */
-  vertical-align: middle; /* Align icons with text */
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  line-height: 0;
+  vertical-align: middle;
 }
 
-.social-media-list li {
-  display: inline-block; /* Align icons horizontally */
-  margin-right: 10px; /* Space between icons */
+.username, .copyright-text {
+  margin-left: 5px;
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
 }
 
-.username {
-  margin-left: 5px; /* Space between icon and username */
-  font-size: 12px; /* Adjust font size of the username text */
+.post-box {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  white-space: pre-wrap;      /* Wrap lines */
+  word-wrap: break-word;      /* Break long words */
+  overflow-x: auto;           /* Horizontal scroll if necessary */
+}
+
+.post-box:hover {
+  transform: scale(1.02);
+}
+
+
+.post-content {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.post-content img {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .about-image {
-  max-width: 100%;     /* Ensures the image does not overflow its container */
+  max-width: 90%;     /* Ensures the image does not overflow its container */
   height: auto;        /* Maintains the aspect ratio */
   display: block;      /* Ensures the image behaves as a block element */
   margin: 20px auto;   /* Centers the image with margin */
@@ -109,73 +121,22 @@ a:hover {
   border: 2px solid #ddd; /* Optional: Add a border for styling */
 }
 
-.copyright-text {
-  font-size: 12px; /* Adjust the font size as needed */
-  color: #666; /* Optionally change the color to a lighter shade */
-  margin-top: 10px; /* Adjust margin for spacing */
-}
 
-.post-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #fff;
+    background-color: #000;
+  }
 
-.post-box {
-  background-color: #f0f0f0; /* Light grey background for the box */
-  border-radius: 8px; /* Rounded corners */
-  padding: 20px; /* Space within the box */
-  margin-bottom: 20px; /* Space between boxes */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
-  overflow: hidden; /* Ensure content doesn't overflow the box */
-  transition: transform 0.2s; /* Animation for hover effect */
-}
+  header, nav, .site-footer, footer, .post-box {
+    background-color: #000;
+    border-color: #444;
+  }
 
-.post-box:hover {
-  transform: scale(1.02); /* Slightly enlarge box on hover */
-}
-
-.post-meta {
-  font-size: 14px;
-  color: #666; /* Less prominent text color */
-  margin-bottom: 10px; /* Space below post date */
-}
-
-.post-link {
-  color: #000;
-  text-decoration: none;
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-.post-link:hover {
-  color: #5badf5; /* Change color on hover */
-}
-
-.post-excerpt {
-  margin-top: 10px;
-  color: #333; /* Darker text for better readability */
-}
-
-.post-content {
-  max-width: 100%;
-  display: block; /* Ensures that post-content takes all available space */
-  margin: 0 auto; /* Centers the content within its container */
-}
-
-.post-content img {
-  max-width: 100%; /* Ensures the image fits within its container */
-  height: auto; /* Maintains the original aspect ratio of the image */
-  display: block; /* Ensures the image behaves as a block element */
-  margin: 10px 0; /* Adds vertical space around the image */
-  border-radius: 4px; /* Optional: Add rounded corners to images */
-}
-
-.post-content p {
-  max-width: 100%;
-  margin: 0;
-}
-
-.post-content * {
-  box-sizing: border-box; /* Ensures padding and border are included in the element's total width */
+  nav ul li a, .post-link, a, 
+  .footer-description, .post-meta, 
+  .post-excerpt, .copyright-text {
+    color: #bbb;
+  }
 }
