@@ -3,7 +3,6 @@ _site
 .jekyll-metadata
 .jekyll-cache
 _site
-Gemfile
 Gemfile.lock
 .replit
 replit.nix

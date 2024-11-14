@@ -1,3 +1,6 @@
+---
+layout: default
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,59 +9,99 @@
     <title>cjmusic.github.io</title>
     <style>
         body {
-            background-color: #000;
-            color: #fff;
+            background-color: #fff; /* Change to match the style of about page */
+            color: #000;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
         }
 
-        .gif-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1; /* Place the GIF behind other content */
-        }
-
-        .gif {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
         header {
+            background-color: #f8f8f8;
             padding: 1em;
+            border-bottom: 2px solid #ddd;
+        }
+
+        nav {
+            background-color: #f8f8f8;
+            padding: 1em;
+            border-bottom: 2px solid #ddd;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
         }
 
         main {
             padding: 2em;
+            text-align: left;
         }
 
         footer {
             padding: 1em;
+            border-top: 2px solid #ddd;
+            background-color: #f8f8f8;
+        }
+
+        .post-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .post-list li {
+            padding: 1em;
+            margin-bottom: 1em;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            text-align: left;
+            overflow: hidden;
+        }
+
+        .post-link {
+            color: #000;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
-    <div class="gif-container">
-        <img class="gif" src="assets/stars.gif" alt="Stars GIF">
-    </div>
-
-    <header>
-        <h1>Chris Joseph</h1>
-    </header>
-
     <main>
-        <p><a href="index.html">HOME</a></p>
-        <p><a href="about.html">ABOUT</a></p>
-        <p><a href="blog.html">BLOG</a></p>
+        <h2>Recent Posts</h2>
+        <ul class="post-list">
+            {% for post in site.posts %}
+            <li>
+                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                <h2>
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h2>
+                <div class="post-content">
+                    {{ post.content }}
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
     </main>
-
-    <footer>
-        <p>© 2024 cjmusic.github.io. All rights reserved.</p>
-    </footer>
 </body>
 </html>
