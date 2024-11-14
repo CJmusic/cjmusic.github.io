@@ -8,22 +8,24 @@
 
   <link rel="icon shortcut" type="image/png" href="{{ "/favicon.png" | prepend: site.baseurl }}">
   
-  <!-- Include the main stylesheet, ensure this file defines light mode styles -->
+  <!-- Link to the CSS that defines both light and dark mode styles -->
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-
-  <!-- Customize styles directly if main.css isn't set up or add additional styles here -->
-  <style>
-    /* Ensure default light theme styles */
-    body {
-      background-color: #ffffff; /* Light background */
-      color: #000000; /* Dark text */
-      font-family: Arial, sans-serif;
-    }
-    a {
-      color: #0000ff; /* Ensure links are visibly distinct */
-    }
-  </style>
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 </head>
+
+<script>
+  function setTheme() {
+    // Check if the user's device is set to dark mode
+    const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    // Apply the dark or light theme to the HTML document
+    document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
+  }
+
+  // Apply the theme on initial load
+  setTheme();
+
+  // Listen for changes in the preferred color scheme
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', setTheme);
+</script>
