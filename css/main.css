@@ -37,3 +37,22 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
 }
+
+.site-footer {
+  background-color: #fff;  /* Match background */
+  color: #000;             /* Match text color */
+  padding: 20px;
+  text-align: center;      /* Or any alignment based on the about page */
+  border-top: 2px solid #ddd; /* Match border if exists */
+  font-family: Arial, sans-serif; /* Match font */
+}
+
+.footer-heading {
+  font-size: 24px;         /* Adjust as necessary */
+  margin: 10px 0;
+}
+
+.footer-description {
+  font-size: 14px;         /* Adjust font size */
+  margin-bottom: 20px;     /* Spacing between description and other content */
+}
