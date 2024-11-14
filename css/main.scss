@@ -29,13 +29,6 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;
@@ -48,3 +41,54 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+// Header Styles
+header {
+  background-color: #f8f8f8;
+  padding: 1em;
+  border-bottom: 2px solid #ddd;
+}
+
+// Navigation Styles
+nav {
+  background-color: #f8f8f8; 
+  padding: 1em;
+  border-bottom: 2px solid #ddd;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #f8f8f8; /* Light grey background */
+  padding: 20px; /* Spacing inside the footer */
+  text-align: center; /* Center text */
+  border-top: 2px solid #ddd; /* Top border to separate footer */
+  color: #000; /* Text color */
+  font-size: 16px; /* Font size */
+}
+
+footer p {
+  margin: 0; /* Remove default margin */
+  font-weight: 400; /* Normal font weight */
+}
+
+footer a {
+  color: #5badf5; /* Footer links color */
+  text-decoration: none; /* Remove underline */
+}
