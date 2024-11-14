@@ -37,22 +37,63 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
 }
-
 .site-footer {
-  background-color: #fff;  /* Match background */
-  color: #000;             /* Match text color */
+  background-color: #fff; /* Adjust background color */
   padding: 20px;
-  text-align: center;      /* Or any alignment based on the about page */
-  border-top: 2px solid #ddd; /* Match border if exists */
-  font-family: Arial, sans-serif; /* Match font */
+  text-align: left; /* Align text to the left */
+  border-top: 2px solid #ddd;
+  color: #000;
+  font-family: Arial, sans-serif;
 }
 
 .footer-heading {
-  font-size: 24px;         /* Adjust as necessary */
-  margin: 10px 0;
+  font-size: 24px;
+  margin-bottom: 5px; /* Provide space below the title */
 }
 
 .footer-description {
-  font-size: 14px;         /* Adjust font size */
-  margin-bottom: 20px;     /* Spacing between description and other content */
+  font-size: 16px;
+  margin-bottom: 10px; /* Provide space below the description */
+}
+
+.footer-col-wrapper {
+  display: flex;
+  justify-content: space-between; /* Flex layout to balance columns */
+  margin-top: 15px; /* Space above the column wrapper */
+}
+
+.contact-list, .social-media-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+a {
+  color: #5badf5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  width: 16px; /* Set width for image-based icons */
+  height: 16px; /* Set height for image-based icons */
+  display: inline-block; /* Ensure proper display */
+  line-height: 0; /* Remove any added line-height */
+  vertical-align: middle; /* Align icons with text */
+}
+
+.social-media-list li {
+  display: inline-block; /* Align icons horizontally */
+  margin-right: 10px; /* Space between icons */
+}
+
+.username {
+  margin-left: 5px; /* Space between icon and username */
+  font-size: 12px; /* Adjust font size of the username text */
 }
