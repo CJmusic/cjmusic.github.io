@@ -57,7 +57,7 @@ a:hover {
   margin-bottom: 5px;
 }
 
-.footer-description, .post-meta {
+.footer-description {
   font-size: 16px
   margin-bottom: 10px;
 }
@@ -90,9 +90,6 @@ a:hover {
   margin-bottom: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  white-space: pre-wrap;      /* Wrap lines */
-  word-wrap: break-word;      /* Break long words */
-  overflow-x: auto;           /* Horizontal scroll if necessary */
 }
 
 .post-box:hover {
@@ -100,7 +97,7 @@ a:hover {
 }
 
 
-.post-content {
+.post-content, page-content {
   max-width: 90%;
   margin: 0 auto;
 }
@@ -135,7 +132,7 @@ a:hover {
   }
 
   nav ul li a, .post-link, a, 
-  .footer-description, .post-meta, 
+  .footer-description, 
   .post-excerpt, .copyright-text {
     color: #bbb;
   }
