@@ -178,7 +178,7 @@ a:hover {
 
 
 .about-image {
-  max-width: 100%;     /* Ensures the image does not overflow its container */
+  max-width: 40%;     /* Ensures the image does not overflow its container */
   height: auto;        /* Maintains the aspect ratio */
   display: block;      /* Ensures the image behaves as a block element */
   margin: 20px auto;   /* Centers the image with margin */
