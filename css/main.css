@@ -105,15 +105,6 @@ a:hover {
   font-size: 12px; /* Adjust font size of the username text */
 }
 
-.about-image {
-  max-width: 100%;     /* Ensures the image does not overflow its container */
-  height: auto;        /* Maintains the aspect ratio */
-  display: block;      /* Ensures the image behaves as a block element */
-  margin: 20px auto;   /* Centers the image with margin */
-  border-radius: 50%;  /* Optional: Give the image a circular appearance */
-  border: 2px solid #ddd; /* Optional: Add a border for styling */
-}
-
 .copyright-text {
   font-size: 12px; /* Adjust the font size as needed */
   color: #666; /* Optionally change the color to a lighter shade */
@@ -184,3 +175,14 @@ a:hover {
 .post-content * {
   box-sizing: border-box; /* Ensures padding and border are included in the element's total width */
 }
+
+
+.about-image {
+  max-width: 100%;     /* Ensures the image does not overflow its container */
+  height: auto;        /* Maintains the aspect ratio */
+  display: block;      /* Ensures the image behaves as a block element */
+  margin: 20px auto;   /* Centers the image with margin */
+  border-radius: 50%;  /* Optional: Give the image a circular appearance */
+  border: 2px solid #ddd; /* Optional: Add a border for styling */
+}
+

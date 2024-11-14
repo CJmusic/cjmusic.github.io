@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: About
 permalink: /about/
 ---
@@ -10,5 +10,7 @@ I am a musician, audio scientist and coder. I studied astronomy, physics and vin
 
 I have various projects I'm currently working on which are hosted on my [Github](https://github.com/CJmusic). 
 
-You can check out my [YouTube](https://www.youtube.com/chrisjosephyt) channel for music and technology videos including ableton live tutorials, studio updates and desk vids. 
+You can check out my [YouTube](https://www.youtube.com/chrisjosephyt) channel for music and technology videos including ableton live tutorials, studio updates and desk vids.
+
+
 
