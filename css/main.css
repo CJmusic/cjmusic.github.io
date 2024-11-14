@@ -9,6 +9,8 @@ body {
   margin: 0;
   padding: 0;
   text-align: left;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 header {
@@ -56,8 +58,7 @@ a:hover {
 }
 
 .footer-description, .post-meta {
-  font-size: 16px;
-  color: #666;
+  font-size: 16px
   margin-bottom: 10px;
 }
 
@@ -89,25 +90,30 @@ a:hover {
   margin-bottom: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  white-space: pre-wrap;      /* Wrap lines */
+  word-wrap: break-word;      /* Break long words */
+  overflow-x: auto;           /* Horizontal scroll if necessary */
 }
 
 .post-box:hover {
   transform: scale(1.02);
 }
 
+
 .post-content {
-  max-width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .post-content img {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
 .about-image {
-  max-width: 100%;     /* Ensures the image does not overflow its container */
+  max-width: 90%;     /* Ensures the image does not overflow its container */
   height: auto;        /* Maintains the aspect ratio */
   display: block;      /* Ensures the image behaves as a block element */
   margin: 20px auto;   /* Centers the image with margin */
@@ -124,7 +130,7 @@ a:hover {
   }
 
   header, nav, .site-footer, footer, .post-box {
-    background-color: #333;
+    background-color: #000;
     border-color: #444;
   }
 
