@@ -11,6 +11,10 @@ body {
   text-align: left;
 }
 
+header {
+    text-align: center;
+}
+
 header, nav, .site-footer, footer, .post-box {
   background-color: #f8f8f8;
   border-bottom: 2px solid #ddd;
@@ -101,6 +105,16 @@ a:hover {
   display: block;
   margin: 0 auto;
 }
+
+.about-image {
+  max-width: 100%;     /* Ensures the image does not overflow its container */
+  height: auto;        /* Maintains the aspect ratio */
+  display: block;      /* Ensures the image behaves as a block element */
+  margin: 20px auto;   /* Centers the image with margin */
+  border-radius: 50%;  /* Optional: Give the image a circular appearance */
+  border: 2px solid #ddd; /* Optional: Add a border for styling */
+}
+
 
 /* Dark mode styles */
 @media (prefers-color-scheme: dark) {
